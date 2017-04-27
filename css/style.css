@@ -1,18 +1,24 @@
-/*****************************************************************mode téléphone********************************/
+/******************************************mode téléphone********************************/
 
+/**************************************Page d'accueil********************************/
 .accueil{
-  width:360px;
+  width:100%;
   height:640px;
   background-image: url(../img/tel/fond.jpg);
-
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 .titre1{
-  color:#D3D3D3;
+  color: white;
   width:40%;
   font-family:'Cabin Sketch', cursive;
   padding:25% 0% 0% 50%;
   font-size:1.5em;
+}
+h1{
+  margin-bottom:0%;
+  text-shadow:2px 2px 4px black;
 }
 
 ul, a{
@@ -26,17 +32,18 @@ ul, a{
   background-color: black;
   border: 4px double white;
   border-radius:10%;
-  width:30%;
-  padding:2%;
-  margin: 5% 10% 0% 45%;
+  width:90%;
+  padding: 2%;
+  margin:5% 30% 5% 0%;
 }
 
 .footer{
+  position: fixed;
+  bottom: 0%;
   background-color:black;
   display: inline-block;
   width: 100%;
   height:10%;
-  margin-top:40%;
 }
 
 .footer ul{
@@ -57,4 +64,69 @@ li:focus{
 
 li:hover{
   background-color: #D3D3D3;
+}
+/*************************************************fin page d'accueil******************************/
+
+
+/****************************************mode tablette**************************************************
+****************************************************************************************************/
+@media screen and (min-width:768px){
+
+/****************************************page d'accueil tablette**************************************/
+.accueil{
+  height: 1024px;
+  background-image: url(../img/tab/fond.jpg);
+}
+
+.titre1{
+  font-size: 3em;
+}
+
+.menu li{;
+  width:10%;
+}
+/****************************************************fin page d'accueil tablette********************/
+
+}
+
+
+/************************************************mode pc*************************************************
+*****************************************************************************************************/
+@media screen and (min-width:1024px) {
+
+/****************************************page d'accueil pc***************************************/
+.accueil{
+  height: 600px;
+  background-image: url(../img/pc/fond.jpg);
+  background-position: bottom;
+}
+
+.titre1{
+  width: 90%;
+  padding: 0%;
+  margin-left:3%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h1{
+  width: 40%;
+}
+
+.menu{
+  width:100%;
+
+}
+
+.menu ul{
+  display: flex;
+  flex-flow: row;
+  width:20%;
+}
+
+.menu li{
+  width:65%;
+}
 }
