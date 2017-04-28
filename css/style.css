@@ -1,5 +1,13 @@
 /******************************************mode téléphone********************************/
+.titre, .gallery{
+  font-family:'Cabin Sketch', cursive;
+}
 
+.menu li, .menu2 li{
+  background-color: black;
+  border: 4px double white;
+  border-radius:10%;
+}
 /**************************************Page d'accueil********************************/
 .accueil{
   width:100%;
@@ -10,13 +18,12 @@
 }
 
 .titre1{
-  color: white;
   width:40%;
-  font-family:'Cabin Sketch', cursive;
   padding:25% 0% 0% 50%;
   font-size:1.5em;
 }
 h1{
+  color: white;
   margin-bottom:0%;
   text-shadow:2px 2px 4px black;
 }
@@ -29,9 +36,6 @@ ul, a{
 }
 
 .menu li{
-  background-color: black;
-  border: 4px double white;
-  border-radius:10%;
   width:90%;
   padding: 2%;
   margin:5% 30% 5% 0%;
@@ -66,8 +70,35 @@ li:hover{
   background-color: #D3D3D3;
 }
 /*************************************************fin page d'accueil******************************/
+/************************************************début page gallery************************************************/
 
+/*************************************************navigation**********************************/
+.gallery{
+  background-color: #d3d3d3;
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-around;
+  align-items: center;
+}
 
+.menu2{
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.menu2 ul{
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu2 li{
+  width: 20%;
+}
 /****************************************mode tablette**************************************************
 ****************************************************************************************************/
 @media screen and (min-width:768px){
