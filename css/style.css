@@ -50,12 +50,12 @@ ul, a{
   height:10%;
 }
 
-.footer ul,{
+.footer ul{
   width:80%;
   display:flex;
 }
 
-.footer li,{
+.footer li{
   background-color: black;
   font-size:2em;
   margin: auto;
@@ -83,14 +83,17 @@ li:hover{
 }
 
 .menu2{
-  background-color: rgba(211, 211, 211, 0.1);
-  width:80%;
+  background-color: white;
+  width:100%;
+  display: flex;
+  padding-top:3%;
+  padding-bottom:3%;
   position:sticky;
   top:0%;
 }
 
 .menu2 ul{
-  width:95%;
+  width:100%;
   display: flex;
   justify-content: space-around;
   align-items:center;
@@ -209,9 +212,15 @@ footer ul{
 }
 
 /**********************************************page blog**********************************/
-article{
+figcaption{
   color: white;
 }
+
+aside{
+  color: white;
+}
+
+
 /***************************************mode tablette**************************************************
 ****************************************************************************************************/
 @media screen and (min-width:768px){
@@ -229,9 +238,45 @@ article{
 .menu li{;
   width:10%;
 }
-/****************************************************fin page d'accueil tablette********************/
+
+
+/***********************************navigation tablette****************************************/
+.menu2 ul{
+  width: 80%;
+}
+
+.menu2 li{
+  margin:5%;
+  padding: 7% 5% 7% 5%;
+}
+
+/************************************page blog**********************************************/
+
+.top{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.bas, .haut{
+  display: flex;
+}
+
+.haut-droite{
+  display: flex;
+  flex-flow: column;
+}
+
+.bas-gauche{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
 
 }
+/****************************************************fin page d'accueil tablette********************/
+
 
 
 /************************************************mode pc*************************************************
